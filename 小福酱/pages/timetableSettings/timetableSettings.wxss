@@ -1,0 +1,62 @@
+page{
+  background-color: #F9F9F9;
+}
+
+.itemContainer{
+  background-color: #FFFFFF;
+  border-radius: 30rpx;
+  padding: 30rpx 35rpx;
+  margin: 20rpx 10rpx;
+}
+.topMarginSetting{
+  margin-top: 100rpx;
+}
+.termChosen{
+  float:right;
+  color: #FE9EA1;
+}
+.termItem{
+  float: left;
+}
+.termItemContainer{
+  margin-top: 20rpx;
+}
+.termItem:not(:nth-child(1)){
+  margin-left: 70rpx;
+}
+.termItem:nth-child(4){
+  float: right;
+  margin-left: 10rpx;
+}
+.termChoosen{
+  float: left;
+  color:#FE9EA1;
+  margin-left: 70rpx;
+}
+.termChoosenFirst{
+  float: left;
+  color: #FE9EA1;
+}
+.termChoosen:nth-child(4){
+  float: right;
+  color:#FE9EA1;
+  margin-left: 10rpx;
+}
+.itemImage{
+  float: right;
+  margin-top: 8rpx;
+  width: 25rpx;
+  height: 25rpx;
+}
+.mSwitch{
+  float: right;
+  width: 120rpx;
+  height: 40rpx;
+  
+}
+
+.clear::after{
+  content: "";
+  clear: both;
+  display: block;
+}

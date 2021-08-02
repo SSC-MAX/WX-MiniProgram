@@ -1,0 +1,56 @@
+<view class="background">
+    <image class="image" src="../../icon/background.png"></image>
+  </view> 
+<view>
+<view class="userPage">
+<view class="userinfo">
+  <view class="userinfo-avatar">
+    <open-data  type="userAvatarUrl"></open-data>
+  </view>
+    <open-data class="userNickName" type="userNickName"></open-data>
+</view> 
+<view class="userDetail" bindtap="login">
+  <view class="college">
+  {{college}}
+</view>
+<view class="numberr" bindtap="login">
+  {{numberr}}
+</view> 
+<view class="qm">
+  {{qm}}
+</view>
+</view>
+</view>
+<view> 
+  <!-- <button bindtap="login">
+    用户登录
+  </button> -->
+</view>   
+</view>
+<view class="list">
+  <button style="width:680rpx;height:120rpx">
+    <image class="icon" src="../../icon/zl.png"></image>
+    <text>个人资料</text>
+  </button>
+  <button style="width:680rpx;height:120rpx">
+    <image class="icon" src="../../icon/gxh.png"></image>
+    <text>个性化</text>
+  </button>
+  <button style="width:680rpx;height:120rpx">
+    <image class="icon" src="../../icon/xx.png"></image>
+    <text>推送设置</text>
+  </button>
+<!-- </view>
+<view class="listt"> -->
+  <button style="width:680rpx;height:120rpx" class="listt">
+    <image class="icon" src="../../icon/bzyfk.png"></image>
+    <text>帮助与反馈</text>
+  </button>
+  <button style="width:680rpx;height:120rpx">
+    <image class="icon" src="../../icon/gywm.png"></image>
+    <text>关于我们</text>
+  </button>
+  <view class="a">a</view>
+</view>
+
+

@@ -1,0 +1,35 @@
+<!--pages/jd/jd.wxml-->
+<view>
+  <view class="float">
+    <view class="a">修读类别</view>
+    <view class="b">{{type}}</view>
+  </view>
+  <view class="float">
+    <view class="a">开课学期</view>
+    <view class="b">{{term}}</view>
+  </view>
+  <view class="float">
+    <view class="a">当科最低分</view>
+    <view class="b">{{low}}</view>
+  </view>
+  <view class="float">
+    <view class="a">总学分</view>
+    <view class="b">{{total}}</view>
+  </view>
+  <view class="float">
+    <view class="a">学分总成绩</view>
+    <view class="b">{{score}}</view>
+  </view>
+  <view class="float">
+    <view class="a">绩点</view>
+    <view class="b">{{GPA}}</view>
+  </view>
+  <view class="float">
+    <view class="a">排名（名次/专业人数）</view>
+    <view class="b">{{place}}</view>
+  </view>
+  <view class="float">
+    <view class="a">补考或重修门数</view>
+    <view class="b">{{num}}</view>
+  </view>
+</view> 

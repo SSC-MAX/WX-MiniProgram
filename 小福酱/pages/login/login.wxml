@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="mContainer">
+  <image class="backgroundImage" src="/images/background_login.png"></image>
+  
+  <view class="innerContainer">
+    <text class="xj">学籍绑定</text>
+    <view>
+    <image src="/images/login_account.png" class="icon"></image>
+      <input class="inputAccount" type="number" placeholder="请输入账号" placeholder-class="inputPlaceHolder" />
+    </view>
+    
+    <view>
+    <image src="/images/login_password.png" class="icon"></image>
+      <input class="inputPassword" type="password" placeholder="请输入密码" placeholder-class="inputPlaceHolder" />
+    </view>
+    
+    <button class="buttonLogin" bindtap="dl">绑定</button>
+    <navigator>忘记密码</navigator>
+
+   <view class="bottomContainer">
+   <text>登录即代表您同意</text><navigator>用户协议</navigator><text>和</text><navigator>隐私政策</navigator>
+   </view>
+  </view>
+  
+</view>
+
+

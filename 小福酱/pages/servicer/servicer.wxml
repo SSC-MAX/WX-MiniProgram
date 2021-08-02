@@ -1,0 +1,188 @@
+<!--index.wxml-->
+
+<view class="fatherContainer">
+<!--顶部轮播图-->
+ <swiper indicator-dots="true" indicator-color="#E8E8E8" indicator-active-color="#ACACAC" autoplay interval="2000" circular>
+  <swiper-item>
+  <image class="swiperImage" src="/images/swiper-image.png"></image>
+  </swiper-item>
+  <swiper-item>
+  <image class="swiperImage" src="/images/swiper-image.png"></image>
+  </swiper-item>
+  <swiper-item>
+  <image class="swiperImage" src="/images/swiper-image.png"></image>
+  </swiper-item>
+ </swiper>
+
+<!--常用模块-->
+  <view class="collapseContainer" catchtap="showUsual" style="--border-bottom-radius-usual--:{{borderBottomRadiusUsual}}">
+   
+    <view class="usualTitle">常用</view>
+    <image class="arrow" src="/images/{{showUsual == 1 ? 'arrow_up' : 'arrow_down'}}.png">
+    </image>
+ <!--内容-->
+  <view class="detailContainer clearFloat" wx:if="{{showUsual == 1}}">
+    <!--1.1-->
+    <view class="detailItem">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">待办事项</view>
+    </view>
+    <!--1.2-->
+    <view class="detailItem">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">我的课程</view>
+    </view>
+    <!--1.3-->
+    <view class="detailItem">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">学业状况</view>
+    </view>
+    <!--1.4-->
+    <view class="detailItem">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">考场查询</view>
+    </view>
+    <!--2.1-->
+    <view class="nextLine">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">一键评议</view>
+    </view>
+  </view>
+</view>
+
+  <!--我的模块-->
+  <view class="collapseContainer" catchtap="showMy" style="--border-bottom-radius-my--:{{borderBottomRadiusMy}}">
+    <image class="titleImg" src="/images/swiper-image.png"></image>
+    <view>我的</view>
+    <image class="arrow" src="/images/{{showMy == 1 ? 'arrow_up' : 'arrow_down'}}.png">
+    </image>
+ 
+  <!--内容-->
+  <view class="detailContainer clearFloat" wx:if="{{showMy == 1}}">
+    <!--1.1-->
+    <view class="detailItem">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">待办事项</view>
+    </view>
+    <!--1.2-->
+    <view class="detailItem">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">我的课程</view>
+    </view>
+    <!--1.3-->
+    <view class="detailItem" catchtap="getGrades">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">学业状况</view>
+    </view>
+    <!--1.4-->
+    <view class="detailItem">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">考场查询</view>
+    </view>
+    <!--2.1-->
+    <view class="nextLine">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">一键评议</view>
+    </view>
+    <!--2.2-->
+    <view class="nextLine">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">自习室</view>
+    </view>
+  </view>
+</view>
+
+<!--学习模块-->
+<view class="collapseContainer" catchtap="showStudy" style="--border-bottom-radius-study--:{{borderBottomRadiusStudy}}">
+  <image class="titleImg" src="/images/swiper-image.png"></image>
+    <view>学习</view>
+    <image class="arrow" src="/images/{{showStudy == 1 ? 'arrow_up' : 'arrow_down'}}.png">
+    </image>
+  
+  <!--内容-->
+  <view class="detailContainer clearFloat" wx:if="{{showStudy == 1}}">
+    <!--1.1-->
+    <view class="detailItem">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">历年卷</view>
+    </view>
+    <!--1.2-->
+    <view class="detailItem">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">校历</view>
+    </view>
+    <!--1.3-->
+    <view class="detailItem">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">选课</view>
+    </view>
+    <!--1.4-->
+    <view class="detailItem">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">空教室</view>
+    </view>
+    <!--2.1-->
+    <view class="nextLine">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">嘉锡讲坛</view>
+    </view>
+    <!--2.2-->
+    <view class="nextLine">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">大物实验</view>
+    </view>
+    <!--2.3-->
+    <view class="ItemAcademicAffairsOffice">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">教务处通知</view>
+    </view>
+    <!--2.4-->
+    <view class=" CompentionSignUp">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">竞赛报名</view>
+    </view>
+  </view>
+</view>
+
+  <!--生活模块-->
+  <view class="collapseContainer" catchtap="showLife" style="--border-bottom-radius-life--:{{borderBottomRadiusLife}}">
+    <image class="titleImg" src="/images/swiper-image.png"></image>
+    <view>生活</view>
+    <image class="arrow" src="/images/{{showLife == 1 ? 'arrow_up' : 'arrow_down'}}.png">
+    </image>
+  
+  <!--内容-->
+  <view class="detailContainer clearFloat detailContainerBottom" wx:if="{{showLife == 1}}">
+    <!--1.1-->
+    <view class="detailItem">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">一卡通</view>
+    </view>
+    <!--1.2-->
+    <view class="detailItem">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">易班</view>
+    </view>
+    <!--1.3-->
+    <view class="detailItem">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">今日校园</view>
+    </view>
+    <!--1.4-->
+    <view class="waterAndElectricity">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">水电费缴交</view>
+    </view>
+    <!--2.1-->
+    <view class="nextLine">
+      <view><image class="detailImage" src="/images/swiper-image.png"></image></view>
+      <view class="detailText">生活圈</view>
+    </view>
+  </view>
+</view>
+  <!--填充模块，确保生活可以正常显示-->
+  <view  class="bottomContainer"></view>
+
+
+</view>
+

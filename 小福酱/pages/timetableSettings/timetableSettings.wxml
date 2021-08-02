@@ -1,0 +1,28 @@
+<!--pages/timetableSettings/timetableSettings.wxml-->
+<view class="itemContainer" catchtap="showTermToChoose">
+  学期切换
+  <view class="termChosen">{{termChosen}}</view>
+  <view wx:if="{{showTerm == 1}}" class="termItemContainer clear" >
+    <view class="{{index1==chosen?'termChoosenFirst':'termItem'}}" catchtap="chooseMe"          data-text="201901" data-index="1">
+      201901
+    </view>
+    <view class="{{index2==chosen?'termChoosen':'termItem'}}" catchtap="chooseMe" 
+    data-text="201902" data-index="2">
+      201902
+    </view>
+    <view class="{{index3==chosen?'termChoosen':'termItem'}}" catchtap="chooseMe" data-text="202001" data-index="3">
+    202001
+    </view>
+    <view class="{{index4==chosen?'termChoosen':'termItem'}}" catchtap="chooseMe" data-text="202002" data-index="4">
+    202002
+    </view>
+  </view>
+</view>
+<view class="itemContainer">新建课程</view>
+<view class="itemContainer">本周作业<image class="itemImage" src="/images/expand.png"></image></view>
+<view class="itemContainer topMarginSetting">签到设置<image class="itemImage" src="/images/expand.png"></image></view>
+<view class="itemContainer">提醒设置<image class="itemImage" src="/images/expand.png"></image></view>
+<view class="itemContainer">桌面组件管理<image class="itemImage" src="/images/expand.png"></image></view>
+<view class="itemContainer topMarginSetting">开启每日课表<image class="mSwitch" src="/images/{{switchOpen1 == 1 ? 'switch_open' : 'switch_close'}}.png" catchtap="switchControl1"></image></view>
+<view class="itemContainer">显示非本周课程<image class="mSwitch" src="/images/{{switchOpen2 == 1 ? 'switch_open' : 'switch_close'}}.png" catchtap="switchControl2"></image></view>
+<view class="itemContainer">导出到日历</view>

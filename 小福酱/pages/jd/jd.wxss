@@ -1,0 +1,14 @@
+/* pages/jd/jd.wxss */
+.float{
+  display: flex;
+  flex-direction: row;
+}
+.a{ 
+  margin:20rpx;
+  font-size:30rpx;
+  color:gray;
+}
+/* .b
+{
+   
+} */

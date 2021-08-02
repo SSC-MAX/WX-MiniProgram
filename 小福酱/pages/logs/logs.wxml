@@ -1,0 +1,8 @@
+<!--logs.wxml-->
+<view>
+  <button bindtap="cj">成绩查询</button>
+  <button bindtap="jd">绩点查询</button>
+  <button>学分统计</button>
+  <button>统考成绩</button>
+  <button>培养计划</button>
+</view>

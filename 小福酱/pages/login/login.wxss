@@ -1,0 +1,95 @@
+/**index.wxss**/
+.mContainer{
+  position: fixed;
+}
+.backgroundImage{
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+.innerContainer{
+  width: 600rpx;
+  position: absolute;
+  top: 250rpx;
+  left: 50rpx;
+}
+.xj
+{
+  margin-left:20rpx;
+  letter-spacing: 3rpx;
+  opacity: 0.8;
+}
+.innerContainer text{
+  color: #FFFFFF;
+  font-size: 60rpx;
+}
+.inputAccount{
+  margin-top: 280rpx;
+  border-bottom: 1rpx solid #FFFFFF;
+  padding-bottom: 25rpx;
+  padding-left: 80rpx;
+  margin-left: 20rpx;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.inputPassword{
+  margin-top: 100rpx;
+  border-bottom: 1rpx solid #FFFFFF;
+  padding-bottom: 25rpx;
+  padding-left: 80rpx;
+  margin-left: 20rpx;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.inputPlaceHolder{
+  margin-bottom: 10rpx;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.buttonLogin{
+  width: 590rpx;
+  height: 12vw;
+  margin-top: 180rpx;
+  margin-left:20rpx;
+  background:linear-gradient(to right,#C70000,#EE3F4D);
+  color: white;
+  font-weight: 300;
+  font-size: 35rpx;
+  border-radius: 50rpx;
+  padding-top: 0rpx;
+}
+.innerContainer>navigator{
+  opacity: 0.9;
+  margin-left:30rpx;
+  margin-top: 40rpx;
+  text-align: center;
+  color: white;
+  font-size: 27rpx;
+}
+
+.icon{
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  left: 30rpx;
+  opacity: 0.5;
+}
+
+.bottomContainer{
+  position: fixed;
+  left: 25%;
+  bottom: 30rpx;
+  text-align: center;
+ }
+.bottomContainer text{
+  color: #CDCDCD;
+  font-size: 22rpx;
+  opacity: 0.7;
+}
+.bottomContainer navigator{
+  display: inline;
+  color: #FFFFFF;
+  font-size: 22rpx;
+  opacity: 0.9;
+}

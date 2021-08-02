@@ -1,0 +1,4 @@
+<!--pages/showGrades/showGrades.wxml-->
+<view wx:for="{{itemList}}">
+  {{item.credit_act}}
+</view>

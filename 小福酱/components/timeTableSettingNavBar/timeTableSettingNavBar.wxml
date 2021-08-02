@@ -1,0 +1,6 @@
+<view style="height:{{nvaHeight}}px top=:{{navTop}}">
+ 
+ <image src="/images/returnBack.png"></image>
+
+</view>
+

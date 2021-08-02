@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/servicer/servicer",
+    "pages/showGrades/showGrades",
+    "pages/index/index",
+    "pages/getGrades/getGrades",
+    "pages/timetableSettings/timetableSettings",
+    "pages/logs/logs",
+    "pages/my/my",
+    "pages/jd/jd",
+    "pages/cj/cj",
+    "pages/banner/banner",
+    "pages/login/login"
+  ], 
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": " 小福酱",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Tab1",
+        "iconPath": "/icon/kb.png",
+        "selectedIconPath": "/icon/kb.png"
+      },
+      {
+        "pagePath": "pages/servicer/servicer",
+        "text": "Tab2",
+        "iconPath": "/icon/service.png",
+        "selectedIconPath": "/icon/serviceing.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "Tab3",
+        "iconPath": "/icon/my-un.png",
+        "selectedIconPath": "/icon/my.png"
+      } 
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
