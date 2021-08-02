@@ -7,6 +7,7 @@ App({
     wx.setStorageSync('logs', logs)
 
     let menuButtonObject = wx.getMenuButtonBoundingClientRect();
+	
     wx.getSystemInfo({
       success: res => {
         let statusBarHeight = res.statusBarHeight,
